@@ -155,7 +155,9 @@ section{
     margin-bottom: 3rem;
     color: var(--black);
 }
-
+#populer{
+    display: inline-block;
+}
 .product .product-row{
     margin-bottom: 5rem;
     display: flex;
