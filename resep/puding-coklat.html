@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puding Coklat/title>
+</head>
+<body>
+    
+</body>
+</html>
+<head>
+    <title>Puding Coklat </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            background-color: #f9f9f9;
+            margin: 5px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .recipe-section {
+            margin-top: 20px;
+        }
+
+        .recipe-section h2 {
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+
+        .recipe-section p {
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        .ingredients,
+        .instructions {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+        }
+
+
+        .button-container {
+            display: flex; /* Mengaktifkan Flexbox */
+            justify-content: center; /* Menyelaraskan tombol secara horizontal di tengah */
+            align-items: center; /* Menyelaraskan tombol secara vertikal di tengah */
+            height: 100%; /* Memastikan container memiliki tinggi agar penyelarasan vertikal bisa berfungsi */
+          }
+          
+          .button-container .btn,
+          .button-container button {
+            background-color: #ea0000; /* Warna latar belakang hijau */
+            color: white; /* Warna teks putih */
+            padding: 0.5rem 1rem; /* Ukuran padding dikurangi */
+            border: none; /* Menghilangkan border */
+            border-radius: 3px; /* Sudut lebih kecil */
+            font-size: 0.9rem; /* Ukuran font sedikit lebih kecil */
+            font-weight: 500; /* Ketebalan font */
+            cursor: pointer; /* Kursor pointer */
+            text-decoration: none; /* Menghilangkan garis bawah untuk <a> */
+            text-align: center; /* Menyelaraskan teks di tengah */
+            transition: background-color 0.3s ease; /* Efek transisi */
+          }
+          
+          /* Efek hover saat tombol disentuh */
+          .button-container .btn:hover,
+          .button-container button:hover {
+            background-color: #fb0000; /* Warna saat hover */
+          }
+          
+          /* Efek aktif saat tombol ditekan */
+          .button-container .btn:active,
+          .button-container button:active {
+            background-color: #e60000; /* Warna saat aktif */
+          }
+          
+  
+    </style>
+
+</head>
+
+<body onload="showMessage()">
+    <div class="container">
+        <h1>Puding Coklat</h1>
+        <img src="/images/puding coklat.jpg" alt="Puding Coklat">
+        <div class="recipe-section">
+            <h2>Bahan-bahan:</h2>
+            <ul class="ingredients">
+                <li>500 ml susu cair</li>
+                <li>100 gram coklat batang (coklat dark atau susu sesuai selera)</li>
+                <li>100 gram gula pasir</li>
+                <li>3 butir telur</li>
+                <li>1 sdt vanili</li>
+                <li>2 sdm maizena</li>
+                <li>Sejumput garam</li>
+            </ul>
+        </div>
+        <div class="recipe-section">
+            <h2>Cara Membuat Puding Coklat:</h2>
+            <div class="instructions">
+                <p>
+                    1. Lelehkan Coklat: Potong coklat batang kecil-kecil dan lelehkan dengan cara ditim atau menggunakan microwave hingga coklat meleleh sempurna.
+                </p>
+                <p>
+                    2. Campurkan Bahan Cair: Dalam panci, campurkan susu cair, gula pasir, vanili, dan garam. Masak dengan api kecil hingga gula larut dan susu hangat.
+                </p>
+                <p>
+                    3. Kocok Telur dan Maizena: Dalam wadah terpisah, kocok telur dan maizena hingga larut dan tercampur rata. Setelah itu, tuangkan sedikit demi sedikit campuran susu hangat ke dalam kocokan telur, aduk rata agar telur tidak menggumpal.
+                </p>
+                <p>
+                    4. Masak Puding: Tuang campuran telur dan susu kembali ke dalam panci yang berisi coklat leleh. Masak dengan api kecil sambil terus diaduk hingga puding mengental. Pastikan puding tidak sampai mendidih.
+                </p>
+                <p>
+                    5. Dinginkan: Setelah puding mengental, angkat dari kompor dan biarkan sedikit dingin. Tuangkan ke dalam wadah atau gelas saji dan biarkan puding menjadi lebih padat saat dingin.
+                </p>
+                <p>
+                    6. Sajikan: Puding coklat siap disajikan. Anda dapat menambahkan topping seperti whipped cream atau potongan buah sesuai selera.
+                </p>
+            </div>
+        </div>
+        <div class="button-container">
+            <button onclick="goBack()">Kembali</button>
+        </div>
+
+        <script>
+            function goBack() {
+                window.history.back(); // Kembali ke halaman sebelumnya
+            }
+        </script>
+
+    </div>
+</body>
+
+
+</html>

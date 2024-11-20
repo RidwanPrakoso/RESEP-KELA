@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelepon/title>
+</head>
+<body>
+    
+</body>
+</html>
+<head>
+    <title>Kelepon </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            background-color: #f9f9f9;
+            margin: 5px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .recipe-section {
+            margin-top: 20px;
+        }
+
+        .recipe-section h2 {
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+
+        .recipe-section p {
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        .ingredients,
+        .instructions {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+        }
+
+
+        .button-container {
+            display: flex; /* Mengaktifkan Flexbox */
+            justify-content: center; /* Menyelaraskan tombol secara horizontal di tengah */
+            align-items: center; /* Menyelaraskan tombol secara vertikal di tengah */
+            height: 100%; /* Memastikan container memiliki tinggi agar penyelarasan vertikal bisa berfungsi */
+          }
+          
+          .button-container .btn,
+          .button-container button {
+            background-color: #ea0000; /* Warna latar belakang hijau */
+            color: white; /* Warna teks putih */
+            padding: 0.5rem 1rem; /* Ukuran padding dikurangi */
+            border: none; /* Menghilangkan border */
+            border-radius: 3px; /* Sudut lebih kecil */
+            font-size: 0.9rem; /* Ukuran font sedikit lebih kecil */
+            font-weight: 500; /* Ketebalan font */
+            cursor: pointer; /* Kursor pointer */
+            text-decoration: none; /* Menghilangkan garis bawah untuk <a> */
+            text-align: center; /* Menyelaraskan teks di tengah */
+            transition: background-color 0.3s ease; /* Efek transisi */
+          }
+          
+          /* Efek hover saat tombol disentuh */
+          .button-container .btn:hover,
+          .button-container button:hover {
+            background-color: #fb0000; /* Warna saat hover */
+          }
+          
+          /* Efek aktif saat tombol ditekan */
+          .button-container .btn:active,
+          .button-container button:active {
+            background-color: #e60000; /* Warna saat aktif */
+          }
+          
+  
+    </style>
+
+</head>
+
+<body onload="showMessage()">
+    <div class="container">
+        <h1>Klepon</h1>
+        <img src="/images/kelepon.jpg" alt="Klepon">
+        <div class="recipe-section">
+            <h2>Bahan-bahan:</h2>
+            <ul class="ingredients">
+                <li>250 gram tepung ketan hijau</li>
+                <li>150 ml air daun pandan suji (atau air daun suji untuk warna hijau alami)</li>
+                <li>100 gram kelapa parut kasar</li>
+                <li>150 gram gula merah serut halus</li>
+                <li>Sejumput garam</li>
+            </ul>
+        </div>
+        <div class="recipe-section">
+            <h2>Cara Membuat Klepon:</h2>
+            <div class="instructions">
+                <p>
+                    1. Siapkan Adonan: Campurkan tepung ketan dengan air daun pandan, sedikit garam, aduk hingga rata. Tambahkan air sedikit-sedikit hingga adonan bisa dipulung dan tidak lengket di tangan.
+                </p>
+                <p>
+                    2. Bentuk Bola: Ambil sedikit adonan dan pipihkan. Letakkan gula merah serut di tengahnya, lalu bulatkan adonan sehingga gula merah tertutup rapat di dalamnya. Pastikan bola klepon rapat agar gula merah tidak keluar saat direbus.
+                </p>
+                <p>
+                    3. Rebus Klepon: Didihkan air dalam panci, tambahkan sedikit garam. Setelah air mendidih, masukkan bola klepon satu per satu. Masak hingga klepon mengapung di permukaan air, yang menandakan klepon sudah matang.
+                </p>
+                <p>
+                    4. Tiriskan dan Gulingkan di Kelapa Parut: Angkat klepon yang sudah matang, tiriskan, dan gulingkan klepon dalam kelapa parut kasar hingga seluruh permukaan klepon terbalut kelapa.
+                </p>
+            </div>
+        </div>
+        <div class="button-container">
+            <button onclick="goBack()">Kembali</button>
+        </div>
+
+        <script>
+            function goBack() {
+                window.history.back(); // Kembali ke halaman sebelumnya
+            }
+        </script>
+
+    </div>
+</body>
+
+
+</html>
