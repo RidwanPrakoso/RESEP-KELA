@@ -114,3 +114,20 @@ function exitPage() {
 function toggleHeart(element) {
   element.classList.toggle('active');
 }
+
+let menuBar = document.querySelector('#menu-bar');
+let searchBar = document.querySelector('.search');
+let searchButton = document.querySelector('#search');
+
+
+document.addEventListener('click', function(e) {
+  // Jika klik bukan pada menu-bar atau navbar, hilangkan kelas 'active' dari navbar
+  if (!menuBar.contains(e.target) && !navbar.contains(e.target)) {
+    navbar.classList.remove('active');
+  }
+  // Jika klik bukan pada search atau navbar, hilangkan kelas 'active' dari search
+  if (!searchButton.contains(e.target) && !navbar.contains(e.target)) {
+    searchBar.classList.remove('active');
+  }
+})
+
