@@ -98,9 +98,6 @@
             margin: 5px;
         }
 
-        .button-container button:hover {
-            background-color: #45a049;
-        }
         .button-container {
             display: flex; /* Mengaktifkan Flexbox */
             justify-content: center; /* Menyelaraskan tombol secara horizontal di tengah */
@@ -110,7 +107,7 @@
           
           .button-container .btn,
           .button-container button {
-            background-color: #4CAF50; /* Warna latar belakang hijau */
+            background-color: #ea0000; /* Warna latar belakang hijau */
             color: white; /* Warna teks putih */
             padding: 0.5rem 1rem; /* Ukuran padding dikurangi */
             border: none; /* Menghilangkan border */
@@ -126,13 +123,13 @@
           /* Efek hover saat tombol disentuh */
           .button-container .btn:hover,
           .button-container button:hover {
-            background-color: #45a049; /* Warna saat hover */
+            background-color: #fb0000; /* Warna saat hover */
           }
           
           /* Efek aktif saat tombol ditekan */
           .button-container .btn:active,
           .button-container button:active {
-            background-color: #388e3c; /* Warna saat aktif */
+            background-color: #e60000; /* Warna saat aktif */
           }
           
     </style>
@@ -183,14 +180,14 @@
             </div>
         </div>
         <div class="button-container">
-           
-            <button onclick="goBack()">
-                Kembali
-            <script>
-                function goBack() {
-                    window.history.back(); // Kembali ke halaman sebelumnya
-                }
-            </script
+            <button onclick="goBack()">Kembali</button>
+          </div>
+          
+          <script>
+            function goBack() {
+              window.history.back(); // Kembali ke halaman sebelumnya
+            }
+          </script>
 </body>
 </body>
 
