@@ -61,11 +61,15 @@ html::-webkit-scrollbar-thumb{
     font-size: 2rem;
     margin-right: 3rem;
     color: var(--black);
-    font-weight: inherit;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: color 0.3s ease, transform 0.3s ease, border-bottom 0.3s ease; /* Menambahkan transisi untuk hover */
 }
 .header .navbar a:hover{
-    border-bottom: .1rem solid var(--black);
-    padding-bottom: .4rem;
+    color: #FF5733; /* Mengubah warna saat hover */
+    border-bottom: 0.1rem solid #FF5733; /* Menambahkan garis bawah dengan warna hover */
+    padding-bottom: 0.4rem; /* Memberikan sedikit ruang di bawah teks */
+    transform: translateY(-3px); /* Efek sedikit naik saat hover */
 }
 .header .icon i{
     font-size: 2rem;
@@ -155,9 +159,7 @@ section{
     margin-bottom: 3rem;
     color: var(--black);
 }
-#populer{
-    display: none;
-}
+
 .product .product-row{
     margin-bottom: 5rem;
     display: flex;
@@ -284,46 +286,6 @@ section{
     color: var(--black);
     text-shadow: var(--box-shadow);
 }
- 
-.newsletter{
-    background: url(images/new.jpg) no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-}
-.newsletter form{
-    max-width: 45rem;
-    text-align: center;
-    padding: 5rem 0;
-}
-.newsletter form h3{
-    font-size: 3rem;
-    color: var(--white);
-    padding-bottom: .7rem;
-}
-.newsletter form .box{
-    width: 100%;
-    margin: .7rem 0;
-    padding: 1rem 1.2rem;
-    color: var(--black);
-    border-radius: .5rem;
-}
-.newsletter form .box2{
-    width: 30%;
-    font-size: 1.5rem;
-    margin-top: 1rem;
-    padding: .5rem .5rem;
-    color: var(--black);
-    background: var(--white);
-    border-radius: 3rem;
-    cursor:pointer;
-}
-.newsletter form .box2:hover{
-    color: var(--white);
-    background-color: var(--black);
-    outline: .1rem solid var(--white);
-}
-
 .review .review-row{
     display: flex;
     flex-direction: column ;
@@ -560,18 +522,31 @@ section{
         right: -100%;
         width: 25rem;
         background-color: var(--white);
-        height: 80vh;
+        height: 100vh;
     }
     .header .navbar.active{
         right: 0;
     }
-    .header .navbar a{
+    .header .navbar a {
         display: block;
-        font-size: 2rem;
-        color: black;
-        margin: 1.5rem;
+        font-size: 1.8rem; /* Menurunkan sedikit ukuran font untuk kesan lebih rapi */
+        color: #333; /* Warna teks yang lebih netral */
+        margin: 1.5rem 2rem; /* Menambahkan ruang lebih banyak di sisi kanan dan kiri */
+        font-weight: 600; /* Font-weight lebih moderat agar tidak terlalu tebal */
+        text-transform: uppercase; /* Menambahkan teks kapital agar lebih menonjol */
+        transition: color 0.3s ease, transform 0.3s ease; /* Menambahkan efek transisi pada hover */
     }
-
+    
+    .header .navbar a:hover {
+        color: #FF5733; /* Mengubah warna saat hover agar lebih menarik */
+        transform: translateY(-3px); /* Efek sedikit naik saat hover */
+    }
+    
+    .header .navbar a:active {
+        color: #C0392B; /* Warna saat link ditekan */
+        transform: translateY(1px); /* Efek menurun sedikit saat ditekan */
+    }
+    
     .home .homeContent{
         margin-left: 0;
         width: 90%;
