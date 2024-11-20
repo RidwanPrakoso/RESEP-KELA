@@ -65,7 +65,7 @@ const data = {
         },
         {
           parent: 2,
-          id: 2, // ID reply diubah untuk konsistensi
+          id: 2,
           content: "Semoga makin banyak resep yg di sediakan.",
           createdAt: "2 days ago",
           score: 2,
@@ -80,6 +80,112 @@ const data = {
         },
       ],
     },
+    // Menambahkan 8 komentar baru
+    {
+      parent: 0,
+      id: 3,
+      content: "Saya baru coba, hasilnya lumayan enak! Terima kasih untuk resepnya.",
+      createdAt: "3 days ago",
+      score: 8,
+      user: {
+        image: {
+          png: "./images/avatars/image-maxblagun.png",
+          webp: "./images/avatars/image-maxblagun.webp",
+        },
+        username: "Fauzan",
+      },
+      replies: [],
+    },
+    {
+      parent: 0,
+      id: 4,
+      content: "Wah, mantap! Ini resep yang mudah dan enak.",
+      createdAt: "4 days ago",
+      score: 6,
+      user: {
+        image: {
+          png: "./images/avatars/image-amyrobson.png",
+          webp: "./images/avatars/image-amyrobson.webp",
+        },
+        username: "Ridwan",
+      },
+      replies: [],
+    },
+    {
+      parent: 0,
+      id: 5,
+      content: "Saya sudah mencoba resep ini, hasilnya enak banget!",
+      createdAt: "5 days ago",
+      score: 10,
+      user: {
+        image: {
+          png: "./images/avatars/image-maxblagun.png",
+          webp: "./images/avatars/image-maxblagun.webp",
+        },
+        username: "Dini",
+      },
+      replies: [],
+    },
+    {
+      parent: 0,
+      id: 6,
+      content: "Resep yang sangat mudah diikuti dan hasilnya memuaskan!",
+      createdAt: "6 days ago",
+      score: 3,
+      user: {
+        image: {
+          png: "./images/avatars/image-juliusomo.png",
+          webp: "./images/avatars/image-juliusomo.webp",
+        },
+        username: "Messi",
+      },
+      replies: [],
+    },
+    {
+      parent: 0,
+      id: 7,
+      content: "Saya suka banget! Resepnya simpel dan rasanya enak.",
+      createdAt: "1 week ago",
+      score: 9,
+      user: {
+        image: {
+          png: "./images/avatars/image-amyrobson.png",
+          webp: "./images/avatars/image-amyrobson.webp",
+        },
+        username: "Anasia Subianto",
+      },
+      replies: [],
+    },
+    {
+      parent: 0,
+      id: 8,
+      content: "Berkat resep ini, saya bisa bikin kue yang enak di rumah!",
+      createdAt: "2 weeks ago",
+      score: 7,
+      user: {
+        image: {
+          png: "./images/avatars/image-ramsesmiron.png",
+          webp: "./images/avatars/image-ramsesmiron.webp",
+        },
+        username: "Fauzan",
+      },
+      replies: [],
+    },
+    {
+      parent: 0,
+      id: 9,
+      content: "Terima kasih banyak! Resepnya sangat bermanfaat.",
+      createdAt: "2 weeks ago",
+      score: 5,
+      user: {
+        image: {
+          png: "./images/avatars/image-juliusomo.png",
+          webp: "./images/avatars/image-juliusomo.webp",
+        },
+        username: "Ridwan",
+      },
+      replies: [],
+    }
   ],
 };
 
