@@ -41,6 +41,7 @@ html::-webkit-scrollbar-thumb{
     position: fixed;
     padding: 1.4rem 7%;
     z-index: 999;
+    height: 90px;
 }
 
 .header .logoContent{
@@ -48,7 +49,7 @@ html::-webkit-scrollbar-thumb{
     align-items: center;
 }
 .header .logoContent .logo img{
-    height: 12rem;
+    height: 15rem;
 }
 .header .logoContent .logoName {
     color: var(--black);
@@ -102,16 +103,8 @@ html::-webkit-scrollbar-thumb{
     display: none;
 }
 
-.comment-icon i {
-    font-size: 20px; /* Ukuran ikon */
-    margin-right: 5px; /* Jarak antara ikon dan teks */
-  }
 
-  .comment-icon a {
-    font-size: 16px; /* Ukuran teks */
-    text-decoration: none; /* Menghilangkan garis bawah */
-    color: #333; /* Warna teks */
-  }
+  
 .home {
     min-height: 100vh;
     display: flex;
@@ -217,7 +210,32 @@ section{
 .product .product-row .product-content .orderNow button:hover{
     font-size: 2rem;
 }
-  
+.icon-container {
+    display: flex; /* Membuat ikon berada dalam satu baris */
+    justify-content: flex-end; /* Memindahkan elemen ke kanan */
+    align-items: center; /* Menjaga elemen sejajar secara vertikal */
+    gap: 10px; /* Jarak antar ikon */
+}
+
+.comment-icon i,
+.heart-icon i {
+    font-size: 24px; /* Ukuran ikon */
+    cursor: pointer; /* Pointer saat hover */
+}
+
+.comment-icon a {
+    text-decoration: none; /* Menghilangkan garis bawah */
+    color: #333; /* Warna teks */
+}
+
+.heart-icon i {
+    transition: color 0.3s ease;
+}
+
+.heart-icon i.active {
+    color: red; /* Warna merah saat aktif */
+}
+
 
 .blogs{
     background: url(images/backGround.png) no-repeat;
