@@ -16,36 +16,41 @@
     <div class="profile-photo-section">
       <img src="/images/profile.jpg" alt="Profile Photo" class="profile-photo">
       <div class="edit-photo">
-        <i class="camera-icon">📷</i>
+        <i class="camera-icon"></i>
       </div>
     </div>
+
     <div class="profile-details">
       <div class="detail-item">
         <span class="detail-title">Name</span>
         <div class="detail-content">
-          <span>Iqbal Semokk</span>
+          <span id="name-display">Iqbal Semokk</span>
+          <input type="text" id="name-edit" class="edit-input" value="Iqbal Semokk" style="display:none;">
           <i class="edit-icon" onclick="enableEdit('name')">✏️</i>
-          
         </div>
       </div>
       <div class="detail-item">
         <span class="detail-title">Email</span>
         <div class="detail-content">
-          <span>iqbalsemok@gmail.com</span>
-          <i class="edit-icon">✏️</i>
+          <span id="email-display">iqbalsemok@gmail.com</span>
+          <input type="email" id="email-edit" class="edit-input" value="iqbalsemok@gmail.com" style="display:none;">
+          <i class="edit-icon" onclick="enableEdit('email')">✏️</i>
         </div>
       </div>
       <div class="detail-item">
         <span class="detail-title">Phone</span>
         <div class="detail-content">
-          <span>08123456789</span>
-          <i class="edit-icon"></i>
+          <span id="phone-display">08123456789</span>
+          <input type="tel" id="phone-edit" class="edit-input" value="08123456789" style="display:none;">
+          <i class="edit-icon" onclick="enableEdit('phone')">✏️</i>
         </div>
       </div>
       <div class="detail-item">
         <span class="detail-title">Address</span>
         <div class="detail-content">
-          <span>Perum Kota Tangerang</span>
+          <span id="address-display">Perum Kota Tangerang</span>
+          <input type="text" id="address-edit" class="edit-input" value="Perum Kota Tangerang" style="display:none;">
+          <i class="edit-icon" onclick="enableEdit('address')">✏️</i>
         </div>
       </div>
     </div>
