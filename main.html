@@ -8,7 +8,7 @@
     <title>Resep KELA</title>
 
     <!-- swiper link  -->
-  <link
+    <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
   />
@@ -89,11 +89,15 @@
                   <div class="orderNow">
                     <button onmouseover="showPreview('Brownis')" onmouseout="hidePreview()" onclick="openKueInfo('resep/brownis.html')">Lihat Resep</button>
                   </div>
-                  <!-- Tambahkan Ikon Komentar di sini -->
-                  <div class="comment-icon">
-                    <a href="/komentar/komentar.html">
-                      <i class='bx bx-comment-detail'></i>
-                    </a>
+                  <div class="icon-container">
+                    <div class="heart-icon">
+                      <i class="bx bxs-heart" onclick="toggleHeart(this)"></i>
+                    </div>
+                    <div class="comment-icon">
+                      <a href="/komentar/komentar.html">
+                        <i class="bx bx-comment-detail"></i>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -108,14 +112,19 @@
                   <div class="orderNow">
                     <button onmouseover="showPreview('Bolu Susu')" onmouseout="hidePreview()" onclick="openKueInfo('resep/bolu-ketan.html')">Lihat Resep</button>
                   </div>
-                   <!-- Tambahkan Ikon Komentar di sini -->
-                   <div class="comment-icon">
-                    <a href="/komentar/komentar.html">
-                      <i class='bx bx-comment-detail'></i>
-                    </a>
+                  <div class="icon-container">
+                    <div class="heart-icon">
+                      <i class="bx bxs-heart" onclick="toggleHeart(this)"></i>
+                    </div>
+                    <div class="comment-icon">
+                      <a href="/komentar/komentar.html">
+                        <i class="bx bx-comment-detail"></i>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
+
               <div class="swiper-slide box">
                 <div class="img">
                   <img src="images/bolu-gulun.jpg" alt="Bolu Gulung">
@@ -126,14 +135,19 @@
                   <div class="orderNow">
                     <button onmouseover="showPreview('Bolu Gulung')" onmouseout="hidePreview()" onclick="openKueInfo('resep/bolu-gulung.html')">Lihat Resep</button>
                   </div>
-                   <!-- Tambahkan Ikon Komentar di sini -->
-                   <div class="comment-icon">
-                    <a href="/komentar/komentar.html">
-                      <i class='bx bx-comment-detail'></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
+                    <div class="icon-container">
+          <div class="heart-icon">
+            <i class="bx bxs-heart" onclick="toggleHeart(this)"></i>
+          </div>
+          <div class="comment-icon">
+            <a href="/komentar/komentar.html">
+              <i class="bx bx-comment-detail"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
               <div class="swiper-slide box">
                 <div class="img">
                   <img src="images/bolu-talas.jpg" alt="Bolu Talas">
@@ -144,14 +158,18 @@
                   <div class="orderNow">
                     <button onmouseover="showPreview('Bolu Talas')" onmouseout="hidePreview()" onclick="openKueInfo('resep/lapis-surabaya.html')">Lihat Resep</button>
                   </div>
-                   <!-- Tambahkan Ikon Komentar di sini -->
-                   <div class="comment-icon">
-                    <a href="/komentar/komentar.html">
-                      <i class='bx bx-comment-detail'></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
+                     <div class="icon-container">
+          <div class="heart-icon">
+            <i class="bx bxs-heart" onclick="toggleHeart(this)"></i>
+          </div>
+          <div class="comment-icon">
+            <a href="/komentar/komentar.html">
+              <i class="bx bx-comment-detail"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
              
             </div>
             <div class="swiper-pagination"></div>
@@ -159,7 +177,7 @@
         </div>
       
         <!-- Section Resep Populer -->
-        <div id="populer" class="section" style="display:none;">
+        <div id="populer" class="section">
           <div class="heading">
             <h2>Resep Populer</h2>
           </div>
@@ -175,11 +193,15 @@
                   <div class="orderNow">
                     <button onmouseover="showPreview('Donat')" onmouseout="hidePreview()" onclick="openKueInfo('resep/donat.html')">Lihat Resep</button>
                   </div>
-                   <!-- Tambahkan Ikon Komentar di sini -->
-                   <div class="comment-icon">
-                    <a href="/komentar/komentar.html">
-                      <i class='bx bx-comment-detail'></i>
-                    </a>
+                  <div class="icon-container">
+                    <div class="heart-icon">
+                      <i class="bx bxs-heart" onclick="toggleHeart(this)"></i>
+                    </div>
+                    <div class="comment-icon">
+                      <a href="/komentar/komentar.html">
+                        <i class="bx bx-comment-detail"></i>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -193,15 +215,18 @@
                   <div class="orderNow">
                     <button onmouseover="showPreview('Lapis Legit')" onmouseout="hidePreview()" onclick="openKueInfo('resep/lapis-legit.html')">Lihat Resep</button>
                   </div>
-                   <!-- Tambahkan Ikon Komentar di sini -->
-                   <div class="comment-icon">
-                    <a href="/komentar/komentar.html">
-                      <i class='bx bx-comment-detail'></i>
-                    </a>
+                  <div class="icon-container">
+                    <div class="heart-icon">
+                      <i class="bx bxs-heart" onclick="toggleHeart(this)"></i>
+                    </div>
+                    <div class="comment-icon">
+                      <a href="/komentar/komentar.html">
+                        <i class="bx bx-comment-detail"></i>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
             <div class="swiper-pagination"></div>
           </div>
         </div>
@@ -382,7 +407,7 @@
 
 
     <!-- swiper js link  -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- custom js file  -->
     <script src="/index.js"></script>
