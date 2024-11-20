@@ -110,3 +110,7 @@ function openKueInfo(url) {
 function exitPage() {
   window.history.back(); // Kembali ke halaman sebelumnya
 }
+
+function toggleHeart(element) {
+  element.classList.toggle('active');
+}
