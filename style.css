@@ -159,6 +159,9 @@ section{
     margin-bottom: 3rem;
     color: var(--black);
 }
+#product {
+display: none;
+}
 
 .product .product-row{
     margin-bottom: 5rem;
