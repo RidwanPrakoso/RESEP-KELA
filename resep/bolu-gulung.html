@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolu gulung/title>
+</head>
+<body>
+    
+</body>
+</html>
+<head>
+    <title>Bolu Gulung </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            background-color: #f9f9f9;
+            margin: 5px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .recipe-section {
+            margin-top: 20px;
+        }
+
+        .recipe-section h2 {
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+
+        .recipe-section p {
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        .ingredients,
+        .instructions {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+        }
+
+
+        .button-container {
+            display: flex; /* Mengaktifkan Flexbox */
+            justify-content: center; /* Menyelaraskan tombol secara horizontal di tengah */
+            align-items: center; /* Menyelaraskan tombol secara vertikal di tengah */
+            height: 100%; /* Memastikan container memiliki tinggi agar penyelarasan vertikal bisa berfungsi */
+          }
+          
+          .button-container .btn,
+          .button-container button {
+            background-color: #4CAF50; /* Warna latar belakang hijau */
+            color: white; /* Warna teks putih */
+            padding: 0.5rem 1rem; /* Ukuran padding dikurangi */
+            border: none; /* Menghilangkan border */
+            border-radius: 3px; /* Sudut lebih kecil */
+            font-size: 0.9rem; /* Ukuran font sedikit lebih kecil */
+            font-weight: 500; /* Ketebalan font */
+            cursor: pointer; /* Kursor pointer */
+            text-decoration: none; /* Menghilangkan garis bawah untuk <a> */
+            text-align: center; /* Menyelaraskan teks di tengah */
+            transition: background-color 0.3s ease; /* Efek transisi */
+          }
+          
+          /* Efek hover saat tombol disentuh */
+          .button-container .btn:hover,
+          .button-container button:hover {
+            background-color: #45a049; /* Warna saat hover */
+          }
+          
+          /* Efek aktif saat tombol ditekan */
+          .button-container .btn:active,
+          .button-container button:active {
+            background-color: #388e3c; /* Warna saat aktif */
+          }
+          
+  
+    </style>
+
+</head>
+
+<body onload="showMessage()">
+    <div class="container">
+        <h1>Bolu Gulung</h1>
+        <img src="/images/bolu-gulun.jpg" alt="Bolu Gulung">
+        <div class="recipe-section">
+            <h2>Bahan-bahan:</h2>
+            <ul class="ingredients">
+                <li>100 gram tepung terigu serbaguna</li>
+                <li>4 butir telur, dipisahkan kuning dan putihnya</li>
+                <li>200 Gula pasir</li>
+                <li>1 sdt Santan</li>
+                <li>40 gr Margarin</li>
+                <li>1 sdt Vanili</li>
+                <li>Baking powder</li>
+            </ul>
+        </div>
+        <div class="recipe-section">
+            <h2>Cara Membuat Bolu gulung:</h2>
+            <div class="instructions">
+                <p>
+                    1. Persiapkan Oven: Panaskan oven terlebih dahulu pada suhu 180 derajat Celsius.
+                </p>
+                <p>
+                    2. Siapkan Loyang: Oleskan margarin atau mentega pada loyang bulat berukuran sekitar 20 cm. Taburi tepung tipis-tipis di atasnya untuk mencegah adonan menempel.
+                </p>
+                <p>
+                    3. Kocok Telur dan Gula: Kocok telur dan gula pasir menggunakan mixer hingga mengembang dan berwarna cerah.
+                </p>
+                <p>
+                    4. Tambahkan Margarin Cair: Tuangkan margarin atau mentega yang telah dilelehkan ke dalam adonan. Aduk perlahan hingga tercampur rata.
+                </p>
+                <p>
+                    5. Tambahkan Bahan Lain: Masukkan santan kental yang sudah Anda siapkan sedikit demi sedikit sambil terus dikocok. Kemudian tambahkan tepung ketan, baking powder (jika digunakan), vanili, dan sejumput garam. Aduk rata dengan spatula hingga semua bahan tercampur sempurna.
+                </p>
+                <p>
+                    6. Panggang: Panggang adonan dalam oven yang sudah dipanaskan sebelumnya selama sekitar 30-40 menit atau hingga matang. Anda bisa melakukan tes tusuk dengan menusukkan tusuk gigi ke tengah bolu. Jika tusuk gigi keluar bersih, berarti bolu sudah matang.
+                </p>
+            </div>
+        </div>
+        <div class="button-container">
+           
+            <button onclick="exitPage()">Kembali ke Menu</button>
+          </div>
+          <script>
+            function exitPage() {
+                window.location.href = "/index.html"; // Mengarahkan ke halaman menu
+            }
+            </script>
+</body>
+
+</html>

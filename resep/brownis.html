@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+<head>
+    <title>Brownis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            background-color: #f9f9f9;
+            margin: 5px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .recipe-section {
+            margin-top: 20px;
+        }
+
+        .recipe-section h2 {
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+
+        .recipe-section p {
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        .ingredients,
+        .instructions {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .button-container button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 5px;
+        }
+
+        .button-container button:hover {
+            background-color: #45a049;
+        }
+        .button-container {
+            display: flex; /* Mengaktifkan Flexbox */
+            justify-content: center; /* Menyelaraskan tombol secara horizontal di tengah */
+            align-items: center; /* Menyelaraskan tombol secara vertikal di tengah */
+            height: 100%; /* Memastikan container memiliki tinggi agar penyelarasan vertikal bisa berfungsi */
+          }
+          
+          .button-container .btn,
+          .button-container button {
+            background-color: #4CAF50; /* Warna latar belakang hijau */
+            color: white; /* Warna teks putih */
+            padding: 0.5rem 1rem; /* Ukuran padding dikurangi */
+            border: none; /* Menghilangkan border */
+            border-radius: 3px; /* Sudut lebih kecil */
+            font-size: 0.9rem; /* Ukuran font sedikit lebih kecil */
+            font-weight: 500; /* Ketebalan font */
+            cursor: pointer; /* Kursor pointer */
+            text-decoration: none; /* Menghilangkan garis bawah untuk <a> */
+            text-align: center; /* Menyelaraskan teks di tengah */
+            transition: background-color 0.3s ease; /* Efek transisi */
+          }
+          
+          /* Efek hover saat tombol disentuh */
+          .button-container .btn:hover,
+          .button-container button:hover {
+            background-color: #45a049; /* Warna saat hover */
+          }
+          
+          /* Efek aktif saat tombol ditekan */
+          .button-container .btn:active,
+          .button-container button:active {
+            background-color: #388e3c; /* Warna saat aktif */
+          }
+          
+    </style>
+
+</head>
+
+<body onload="showMessage()">
+    <div class="container">
+        <h1>Brownis</h1>
+        <img src="/images/browniss.jpg" alt="Brownis">
+        <div class="recipe-section">
+            <h2>Bahan-bahan:</h2>
+            <ul class="ingredients">
+                <li>200 gram dark chocolate (cokelat hitam), potong kecil-kecil</li>
+                <li>150 gram mentega</li>
+                <li>200 gram gula pas</li>
+                <li>3 butir telurr</li>
+                <li>200 gr Margarin</li>
+                <li>100 gram tepung terigu serbaguna</li>
+                <li>1/4 sendok teh garam</li>
+            </ul>
+        </div>
+        <div class="recipe-section">
+            <h2>Cara Membuat Brownis:</h2>
+            <div class="instructions">
+                <p>
+                    1. Panaskan oven hingga suhu 180 derajat Celsius. Siapkan loyang persegi berukuran sekitar 20x20 cm, alasi dengan kertas roti atau olesi dengan mentega dan taburi dengan tepung untuk mencegah adonan menempel.
+                </p>
+                <p>
+                    2. Lelehkan Cokelat dan Mentega: Lelehkan dark chocolate dan mentega dalam mangkuk tahan panas di atas panci yang berisi air mendidih (metode double boiler). Atau, Anda dapat melelehkan keduanya dalam microwave dengan cara memanaskannya dalam interval pendek sambil diaduk hingga leleh dan tercampur.
+                <p>
+                    3. Kocok Telur dan Gula:Kocok telur dan gula pasir dalam mangkuk besar hingga mengembang dan berwarna cerah.
+                </p>
+                <p>
+                    4. Campurkan Adonan: Tuangkan campuran cokelat dan mentega yang telah dilelehkan ke dalam adonan telur dan gula. Aduk hingga tercampur rata.
+                </p>
+                <p>
+                    5. Tuang ke Loyang dan Panggang: Tuangkan adonan ke dalam loyang yang telah disiapkan. Ratakan permukaannya dengan spatula dan Panggang selama 30menit.
+                </p>
+            </div>
+        </div>
+        <div class="button-container">
+           
+            <button onclick="exitPage()">Kembali ke Menu</button>
+          </div>
+          <script>
+            function exitPage() {
+                window.location.href = "/index.html"; // Mengarahkan ke halaman menu
+            }
+            </script>
+</body>
+</body>
+
+</html>

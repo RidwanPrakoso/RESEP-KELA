@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Page</title>
+  <link rel="stylesheet" href="/edit profile/style.css">
+</head>
+<body>
+  <div class="profile-container">
+    <header class="profile-header">
+        <i class="back-icon" onclick="goBack()">←</i>
+        <span>Profile</span>
+      </header>
+      
+    <div class="profile-photo-section">
+      <img src="/images/profile.jpg" alt="Profile Photo" class="profile-photo">
+      <div class="edit-photo">
+        <i class="camera-icon">📷</i>
+      </div>
+    </div>
+    <div class="profile-details">
+      <div class="detail-item">
+        <span class="detail-title">Name</span>
+        <div class="detail-content">
+          <span>Iqbal Semokk</span>
+          <i class="edit-icon" onclick="enableEdit('name')">✏️</i>
+          
+        </div>
+      </div>
+      <div class="detail-item">
+        <span class="detail-title">Email</span>
+        <div class="detail-content">
+          <span>iqbalsemok@gmail.com</span>
+          <i class="edit-icon">✏️</i>
+        </div>
+      </div>
+      <div class="detail-item">
+        <span class="detail-title">Phone</span>
+        <div class="detail-content">
+          <span>08123456789</span>
+          <i class="edit-icon"></i>
+        </div>
+      </div>
+      <div class="detail-item">
+        <span class="detail-title">Address</span>
+        <div class="detail-content">
+          <span>Perum Kota Tangerang</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/edit profile/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<head>
+    <title>Bolu Talas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            background-color: #f9f9f9;
+            margin: 5px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .recipe-section {
+            margin-top: 20px;
+        }
+
+        .recipe-section h2 {
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+
+        .recipe-section p {
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        .ingredients,
+        .instructions {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .button-container button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 5px;
+        }
+
+        .button-container button:hover {
+            background-color: #45a049;
+        }
+        .button-container {
+            display: flex; /* Mengaktifkan Flexbox */
+            justify-content: center; /* Menyelaraskan tombol secara horizontal di tengah */
+            align-items: center; /* Menyelaraskan tombol secara vertikal di tengah */
+            height: 100%; /* Memastikan container memiliki tinggi agar penyelarasan vertikal bisa berfungsi */
+          }
+          
+          .button-container .btn,
+          .button-container button {
+            background-color: #4CAF50; /* Warna latar belakang hijau */
+            color: white; /* Warna teks putih */
+            padding: 0.5rem 1rem; /* Ukuran padding dikurangi */
+            border: none; /* Menghilangkan border */
+            border-radius: 3px; /* Sudut lebih kecil */
+            font-size: 0.9rem; /* Ukuran font sedikit lebih kecil */
+            font-weight: 500; /* Ketebalan font */
+            cursor: pointer; /* Kursor pointer */
+            text-decoration: none; /* Menghilangkan garis bawah untuk <a> */
+            text-align: center; /* Menyelaraskan teks di tengah */
+            transition: background-color 0.3s ease; /* Efek transisi */
+          }
+          
+          /* Efek hover saat tombol disentuh */
+          .button-container .btn:hover,
+          .button-container button:hover {
+            background-color: #45a049; /* Warna saat hover */
+          }
+          
+          /* Efek aktif saat tombol ditekan */
+          .button-container .btn:active,
+          .button-container button:active {
+            background-color: #388e3c; /* Warna saat aktif */
+          }
+          
+    </style>
+
+</head>
+
+<body onload="showMessage()">
+    <div class="container">
+        <h1>Bolu Talas</h1>
+        <img src="/images/bolu-talas.jpg" alt="Lapis Surabaya">
+        <div class="recipe-section">
+            <h2>Bahan-bahan:</h2>
+            <ul class="ingredients">
+                <li>300 gram mentega</li>
+                <li>300 gram gula pasir</li>
+                <li>20 butir kuning telur</li>
+                <li>10 butir putih telur</li>
+                <li>200 gram tepung terigu protein sedang</li>
+                <li>50 gram susu bubuk</li>
+                <li>1 sendok makan pasta vanila</li>
+                <li>1 sendok makan cokelat bubuk</li>
+                <li>1 sendok makan pasta cokelat</li>
+                <li>Selai strawberry atau blueberry untuk olesan</li>
+            </ul>
+        </div>
+        <div class="recipe-section">
+            <h2>Cara Membuat Bolu Talas:</h2>
+            <div class="instructions">
+                <p>
+                    1. Persiapkan Loyang: Alasi tiga loyang persegi berukuran 22x22 cm dengan kertas roti dan olesi mentega. Panaskan oven dengan api atas bawah pada suhu 180 derajat Celsius.
+                </p>
+                <p>
+                    2. Kocok Mentega dan Gula: Kocok mentega dan gula pasir hingga lembut dan mengembang.
+                </p>
+                <p>
+                    3. Kocok Telur: Dalam mangkuk terpisah, kocok kuning telur dan putih telur hingga mengembang dan berwarna pucat.
+                </p>
+                <p>
+                    4. Campurkan Adonan: Masukkan campuran telur ke dalam adonan mentega sedikit demi sedikit sambil dikocok perlahan hingga tercampur rata.
+                </p>
+                <p>
+                    5. Tambahkan Bahan Kering: Masukkan tepung terigu dan susu bubuk sedikit demi sedikit ke dalam adonan. Aduk hingga semua bahan tercampur rata.
+                </p>
+                <p>
+                    6. Bagi Adonan: Bagi adonan menjadi tiga bagian. Dua bagian tambahkan pasta vanila dan satu bagian tambahkan cokelat bubuk dan pasta cokelat. Aduk hingga rata.
+                </p>
+                <p>
+                    7. Panggang: Tuang adonan vanila ke dalam dua loyang dan adonan cokelat ke dalam satu loyang. Ratakan permukaannya dengan spatula dan panggang selama 20-25 menit atau hingga matang.
+                </p>
+                <p>
+                    8. Setelah Matang: Angkat dari oven dan biarkan dingin sejenak. Olesi lapisan vanila dengan selai strawberry atau blueberry, tumpuk dengan lapisan cokelat di atasnya, dan tutup dengan lapisan vanila lainnya.
+                </p>
+                <p>
+                    9. Potong dan Sajikan: Potong-potong Lapis Surabaya sesuai selera dan sajikan.
+                </p>
+            </div>
+        </div>
+        <div class="button-container">
+        
+            <button onclick="exitPage()">Kembali ke Menu</button>
+          </div>
+          <script>
+            function exitPage() {
+                window.location.href = "/index.html"; // Mengarahkan ke halaman menu
+            }
+            </script>
+</body>
+</body>
+
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<head>
+    <title>Donat</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            background-color: #f9f9f9;
+            margin: 5px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .recipe-section {
+            margin-top: 20px;
+        }
+
+        .recipe-section h2 {
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+
+        .recipe-section p {
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        .ingredients,
+        .instructions {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .button-container button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 5px;
+        }
+
+        .button-container button:hover {
+            background-color: #45a049;
+        }
+        .button-container {
+            display: flex; /* Mengaktifkan Flexbox */
+            justify-content: center; /* Menyelaraskan tombol secara horizontal di tengah */
+            align-items: center; /* Menyelaraskan tombol secara vertikal di tengah */
+            height: 100%; /* Memastikan container memiliki tinggi agar penyelarasan vertikal bisa berfungsi */
+          }
+          
+          .button-container .btn,
+          .button-container button {
+            background-color: #4CAF50; /* Warna latar belakang hijau */
+            color: white; /* Warna teks putih */
+            padding: 0.5rem 1rem; /* Ukuran padding dikurangi */
+            border: none; /* Menghilangkan border */
+            border-radius: 3px; /* Sudut lebih kecil */
+            font-size: 0.9rem; /* Ukuran font sedikit lebih kecil */
+            font-weight: 500; /* Ketebalan font */
+            cursor: pointer; /* Kursor pointer */
+            text-decoration: none; /* Menghilangkan garis bawah untuk <a> */
+            text-align: center; /* Menyelaraskan teks di tengah */
+            transition: background-color 0.3s ease; /* Efek transisi */
+          }
+          
+          /* Efek hover saat tombol disentuh */
+          .button-container .btn:hover,
+          .button-container button:hover {
+            background-color: #45a049; /* Warna saat hover */
+          }
+          
+          /* Efek aktif saat tombol ditekan */
+          .button-container .btn:active,
+          .button-container button:active {
+            background-color: #388e3c; /* Warna saat aktif */
+          }
+          
+    </style>
+
+</head>
+
+<body onload="showMessage()">
+    <div class="container">
+        <h1>Donat</h1>
+        <img src="/images/donat.jpg" alt="Donat">
+        <div class="recipe-section">
+            <h2>Bahan-bahan:</h2>
+            <ul class="ingredients">
+                <li>500 gram tepung terigu protein tinggi</li>
+                <li>11 gram ragi instan</li>
+                <li>200 ml susu cair hangat</li>
+                <li>100 gram gula pasir</li>
+                <li>50 gram mentega</li>
+                <li>2 butir telur</li>
+                <li>1/2 sendok teh garam</li>
+                <li>Minyak goreng secukupnya</li>
+            </ul>
+        </div>
+        <div class="recipe-section">
+            <h2>Cara Membuat Donat:</h2>
+            <div class="instructions">
+                <p>
+                    1. Campur Bahan Kering: Dalam mangkuk besar, campurkan tepung terigu, ragi instan, dan gula pasir. Aduk hingga rata.
+                </p>
+                <p>
+                    2. Tambahkan Bahan Basah: Masukkan telur dan susu cair hangat ke dalam campuran tepung. Aduk hingga semua bahan tercampur rata.
+                </p>
+                <p>
+                    3. Uleni Adonan: Uleni adonan hingga setengah kalis, kemudian tambahkan mentega dan garam. Lanjutkan menguleni hingga adonan benar-benar kalis dan elastis.
+                </p>
+                <p>
+                    4. Fermentasi Adonan: Tutup adonan dengan kain bersih dan biarkan mengembang selama 1 jam atau hingga ukurannya menjadi dua kali lipat.
+                </p>
+                <p>
+                    5. Bentuk Donat: Kempiskan adonan dan bentuk menjadi bulatan-bulatan kecil. Lubangi tengahnya dengan jari atau menggunakan cetakan donat.
+                </p>
+                <p>
+                    6. Fermentasi Kedua: Diamkan adonan yang sudah dibentuk selama 15 menit hingga mengembang lagi.
+                </p>
+                <p>
+                    7. Goreng Donat: Panaskan minyak dalam wajan. Goreng donat hingga berwarna keemasan, angkat dan tiriskan.
+                </p>
+                <p>
+                    8. Hias Donat: Donat siap dihias sesuai selera, bisa ditaburi gula halus, cokelat leleh, atau topping lainnya.
+                </p>
+            </div>
+        </div>
+        <div class="button-container">
+
+            <button onclick="exitPage()">Kembali ke Menu</button>
+          </div>
+          <script>
+            function exitPage() {
+                window.location.href = "/index.html"; // Mengarahkan ke halaman menu
+            }
+            </script>
+</body>
+</body>
+
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+<head>
+    <title>Bolu Susu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            background-color: #f9f9f9;
+            margin: 5px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .recipe-section {
+            margin-top: 20px;
+        }
+
+        .recipe-section h2 {
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+
+        .recipe-section p {
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        .ingredients,
+        .instructions {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .button-container button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 5px;
+        }
+
+        .button-container button:hover {
+            background-color: #45a049;
+        }
+        .button-container {
+            display: flex; /* Mengaktifkan Flexbox */
+            justify-content: center; /* Menyelaraskan tombol secara horizontal di tengah */
+            align-items: center; /* Menyelaraskan tombol secara vertikal di tengah */
+            height: 100%; /* Memastikan container memiliki tinggi agar penyelarasan vertikal bisa berfungsi */
+          }
+          
+          .button-container .btn,
+          .button-container button {
+            background-color: #4CAF50; /* Warna latar belakang hijau */
+            color: white; /* Warna teks putih */
+            padding: 0.5rem 1rem; /* Ukuran padding dikurangi */
+            border: none; /* Menghilangkan border */
+            border-radius: 3px; /* Sudut lebih kecil */
+            font-size: 0.9rem; /* Ukuran font sedikit lebih kecil */
+            font-weight: 500; /* Ketebalan font */
+            cursor: pointer; /* Kursor pointer */
+            text-decoration: none; /* Menghilangkan garis bawah untuk <a> */
+            text-align: center; /* Menyelaraskan teks di tengah */
+            transition: background-color 0.3s ease; /* Efek transisi */
+          }
+          
+          /* Efek hover saat tombol disentuh */
+          .button-container .btn:hover,
+          .button-container button:hover {
+            background-color: #45a049; /* Warna saat hover */
+          }
+          
+          /* Efek aktif saat tombol ditekan */
+          .button-container .btn:active,
+          .button-container button:active {
+            background-color: #388e3c; /* Warna saat aktif */
+          }
+          
+    </style>
+
+</head>
+
+<body onload="showMessage()">
+    <div class="container">
+        <h1>Bolu Susu</h1>
+        <img src="/images/bolu-susu.jpg" alt="Bolu Susu">
+        <div class="recipe-section">
+            <h2>Bahan-bahan:</h2>
+            <ul class="ingredients">
+                <li>200 gram tepung ketan putih</li>
+                <li>4 butir telur</li>
+                <li>200 gram gula pasir</li>
+                <li>100 ml santan kental</li>
+                <li>100 ml minyak sayur</li>
+                <li>1 sendok teh vanili</li>
+                <li>1 sendok teh baking powder</li>
+                <li>Sejumput garam</li>
+            </ul>
+        </div>
+        <div class="recipe-section">
+            <h2>Cara Membuat Bolu Susu:</h2>
+            <div class="instructions">
+                <p>
+                    1. Persiapkan Loyang: Alasi loyang dengan kertas roti dan olesi dengan sedikit minyak. Panaskan oven pada suhu 180 derajat Celsius.
+                </p>
+                <p>
+                    2. Kocok Telur dan Gula: Kocok telur dan gula pasir menggunakan mixer hingga mengembang dan berwarna cerah.
+                </p>
+                <p>
+                    3. Tambahkan Bahan Basah: Tambahkan santan kental dan minyak sayur ke dalam adonan telur dan gula. Aduk hingga tercampur rata.
+                </p>
+                <p>
+                    4. Tambahkan Bahan Kering: Masukkan tepung ketan putih, vanili, baking powder, dan sejumput garam ke dalam adonan. Aduk perlahan hingga semua bahan tercampur rata.
+                </p>
+                <p>
+                    5. Tuang Adonan: Tuang adonan ke dalam loyang yang telah disiapkan. Ratakan permukaannya dengan spatula.
+                </p>
+                <p>
+                    6. Panggang: Panggang dalam oven yang telah dipanaskan selama 30-40 menit atau hingga matang. Lakukan tes tusuk dengan menusukkan tusuk gigi ke tengah bolu. Jika tusuk gigi keluar bersih, berarti bolu sudah matang.
+                </p>
+                <p>
+                    7. Dinginkan dan Sajikan: Angkat dari oven dan biarkan dingin sejenak sebelum dipotong-potong dan disajikan.
+                </p>
+            </div>
+        </div>
+        <div class="button-container">
+           
+            <button onclick="exitPage()">Kembali ke Menu</button>
+          </div>
+          <script>
+            function exitPage() {
+                window.location.href = "/index.html"; // Mengarahkan ke halaman menu
+            }
+            </script>
+</body>
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	background-color: #121212;
+	color: #ffffff;
+	height: 100vh; /* Pastikan body mengambil seluruh tinggi layar */
+  }
+  
+  .profile-container {
+	display: flex;
+	flex-direction: column;
+	height: 100vh; /* Kontainer profil mengambil tinggi penuh layar */
+  }
+  
+  .profile-header {
+	display: flex;
+	align-items: center;
+	padding: 10px 20px;
+	background-color: #1f1f1f;
+	border-bottom: 1px solid #333;
+	flex-shrink: 0; /* Jangan biarkan header menyusut */
+  }
+  
+  .back-icon {
+	font-size: 20px;
+	margin-right: 15px;
+  }
+  
+  .profile-photo-section {
+	position: relative;
+	text-align: center;
+	padding: 20px 0;
+	background-color: #1f1f1f;
+	flex-shrink: 0; /* Jangan biarkan bagian foto profil menyusut */
+  }
+  
+  .profile-photo {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	object-fit: cover;
+  }
+  
+  .edit-photo {
+	position: absolute;
+	bottom: 20px;
+	right: calc(50% - 40px);
+	background-color: #25d366;
+	color: #fff;
+	padding: 8px;
+	border-radius: 50%;
+	border: 2px solid #121212;
+	font-size: 16px;
+  }
+  
+  .profile-details {
+	background-color: #1f1f1f;
+	padding: 10px 20px;
+	flex: 1; /* Ambil sisa ruang yang ada */
+	overflow-y: auto; /* Jika konten melebihi layar, tambahkan scroll */
+  }
+  
+  .detail-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 0;
+	border-bottom: 1px solid #333;
+  }
+  
+  .detail-title {
+	font-size: 14px;
+	color: #aaa;
+  }
+  
+  .detail-content {
+	display: flex;
+	align-items: center;
+  }
+  
+  .edit-icon {
+	margin-left: 10px;
+	font-size: 16px;
+	color: #25d366;
+	cursor: pointer;
+  }
+  .back-icon {
+	font-size: 20px;
+	color: #ffffff;
+	cursor: pointer;
+	margin-right: 15px;
+	display: inline-block;
+	transition: color 0.3s ease;
+	-webkit-transition: color 0.3s ease;
+	-moz-transition: color 0.3s ease;
+	-ms-transition: color 0.3s ease;
+	-o-transition: color 0.3s ease;
+}
+  
+  .back-icon:hover {
+	color: #25d366; /* Warna saat dihover */
+  }
+  .editable {
+	border: none;
+	outline: none;
+	background: none;
+	color: #ffffff;
+	cursor: text;
+	transition: background-color 0.2s;
+  }
+  
+  .editable[contenteditable="true"] {
+	background-color: #2a2a2a; /* Warna background saat sedang diedit */
+	padding: 2px 4px;
+	border-radius: 4px;
+  }
+	  

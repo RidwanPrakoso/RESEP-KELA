@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Cake</title>
+
+    <!-- swiper link  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- cdn icon link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- custom css file  -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- box icon -->
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+ 
+    <!-- header section start here  -->
+    <header class="header">
+        <div class="logoContent">
+            <a href="#" class="logo"><img src="images/kela.png" alt=""></a>
+            <h1 class="logoName"></h1>
+        </div>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#product">product</a>
+            <a href="#blogs">About us</a>
+            <a href="#review">review</a>
+            <a href="/edit profile/profile.html">Account</a>
+            <a href="./index.html">Login/Sign in</a>
+        </nav>
+
+        <div class="icon">
+            <i class="fas fa-search" id="search"></i>
+            <i class="fas fa-bars" id="menu-bar"></i>
+        </div>
+
+        <div class="search">
+            <input type="search" placeholder="search...">
+        </div>
+    </header>
+    <!-- header section end here  -->
+
+    <!-- home section start here  -->
+    <section class="home" id="home">
+        <div class="homeContent">
+            <h2>Cake Recipes for Everyone </h2>
+          
+
+        </div>
+    </section>
+    <!-- home section end here  -->
+
+
+    <!-- product section start here  -->
+    <section class="product" id="product">
+        <!-- Tombol untuk memilih Resep Terbaru dan Resep Populer -->
+        <div class="button-group">
+          <button onclick="showPopuler()">Populer</button>
+          <button onclick="showTerbaru()">Terbaru</button>
+        </div>
+      
+        <!-- Section Resep Terbaru -->
+        <div id="terbaru" class="section">
+          <div class="heading">
+            <h2>Resep Terbaru</h2>
+          </div>
+          <div class="swiper product-row">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide box">
+                <div class="img">
+                  <img src="images/browniss.jpg" alt="Brownis">
+                </div>
+                <div class="product-content">
+                  <h3>Brownis</h3>
+                  <p>Brownis adalah kue coklat yang memiliki tekstur thas, perpaduan antaran kue dan cookie.</p>
+                  <div class="orderNow">
+                    <button onmouseover="showPreview('Brownis')" onmouseout="hidePreview()" onclick="openKueInfo('resep/brownis.html')">Lihat Resep</button>
+                  </div>
+                  <!-- Tambahkan Ikon Komentar di sini -->
+                  <div class="comment-icon">
+                    <a href="/komentar/komentar.html">
+                      <i class='bx bx-comment-detail'></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="swiper-slide box">
+                <div class="img">
+                  <img src="images/bolu-susu.jpg" alt="Bolu Susu">
+                </div>
+                <div class="product-content">
+                  <h3>Bolu Susu</h3>
+                  <p>Bolu susu adalah sejenis kue bolu yang menggunakan susu sebagai bahan utamanya.</p>
+                  <div class="orderNow">
+                    <button onmouseover="showPreview('Bolu Susu')" onmouseout="hidePreview()" onclick="openKueInfo('resep/bolu-ketan.html')">Lihat Resep</button>
+                  </div>
+                   <!-- Tambahkan Ikon Komentar di sini -->
+                   <div class="comment-icon">
+                    <a href="/komentar/komentar.html">
+                      <i class='bx bx-comment-detail'></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide box">
+                <div class="img">
+                  <img src="images/bolu-gulun.jpg" alt="Bolu Gulung">
+                </div>
+                <div class="product-content">
+                  <h3>Bolu Gulung</h3>
+                  <p>Bolu Gulung adalah sejenis kue bebentuk gulungan yang dibuat dari adonan sponge cake yang lembut.</p>
+                  <div class="orderNow">
+                    <button onmouseover="showPreview('Bolu Gulung')" onmouseout="hidePreview()" onclick="openKueInfo('resep/bolu-gulung.html')">Lihat Resep</button>
+                  </div>
+                   <!-- Tambahkan Ikon Komentar di sini -->
+                   <div class="comment-icon">
+                    <a href="/komentar/komentar.html">
+                      <i class='bx bx-comment-detail'></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide box">
+                <div class="img">
+                  <img src="images/bolu-talas.jpg" alt="Bolu Talas">
+                </div>
+                <div class="product-content">
+                  <h3>Bolu Talas</h3>
+                  <p>Bolu talas adalah kue bolu yang menggunakan talas sebagai salah satu bahan utama dalam adonannya.</p>
+                  <div class="orderNow">
+                    <button onmouseover="showPreview('Bolu Talas')" onmouseout="hidePreview()" onclick="openKueInfo('resep/lapis-surabaya.html')">Lihat Resep</button>
+                  </div>
+                   <!-- Tambahkan Ikon Komentar di sini -->
+                   <div class="comment-icon">
+                    <a href="/komentar/komentar.html">
+                      <i class='bx bx-comment-detail'></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+             
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      
+        <!-- Section Resep Populer -->
+        <div id="populer" class="section" style="display:none;">
+          <div class="heading">
+            <h2>Resep Populer</h2>
+          </div>
+          <div class="swiper product-row">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide box">
+                <div class="img">
+                  <img src="images/donat.jpg" alt="Donat">
+                </div>
+                <div class="product-content">
+                  <h3>Donat</h3>
+                  <p>Donat adalah sejenis kue yang berbentuk cincin dengan lubang di tengahnya.</p>
+                  <div class="orderNow">
+                    <button onmouseover="showPreview('Donat')" onmouseout="hidePreview()" onclick="openKueInfo('resep/donat.html')">Lihat Resep</button>
+                  </div>
+                   <!-- Tambahkan Ikon Komentar di sini -->
+                   <div class="comment-icon">
+                    <a href="/komentar/komentar.html">
+                      <i class='bx bx-comment-detail'></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide box">
+                <div class="img">
+                  <img src="images/lapis-legit.jpg" alt="Lapis Legit">
+                </div>
+                <div class="product-content">
+                  <h3>Lapis Legit</h3>
+                  <p>Lapis legit adalah kue tradisional khas indonesia yang memiliki tekstur berlapis-lapis.</p>
+                  <div class="orderNow">
+                    <button onmouseover="showPreview('Lapis Legit')" onmouseout="hidePreview()" onclick="openKueInfo('resep/lapis-legit.html')">Lihat Resep</button>
+                  </div>
+                   <!-- Tambahkan Ikon Komentar di sini -->
+                   <div class="comment-icon">
+                    <a href="/komentar/komentar.html">
+                      <i class='bx bx-comment-detail'></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      
+
+    <!-- product section end here  -->
+
+   <!-- blogs section start here  -->
+  
+
+  <section class="blogs" id="blogs">
+    
+    <div class="heading">
+      <h2>About Us</h2>
+    </div>
+      <div class=" swiper blogs-row">
+          <div class="swiper-wrapper">
+              <div class=" swiper-slide box">
+                  <div class="img">
+                      <img src="/images/image.png" alt="">
+                  </div>
+                  <div class="content">
+                      <h3>Sederhana dan Umum:</h3>
+                      <p>
+                        "Kami adalah tim yang berdedikasi untuk menghadirkan solusi terbaik melalui aplikasi ini. Dengan fokus pada inovasi dan kemudahan, kami berkomitmen untuk memberikan pengalaman pengguna yang luar biasa. Terima kasih telah menggunakan aplikasi kami!"</p>
+                      
+                  </div>
+              </div>
+              <div class=" swiper-slide box">
+                  <div class="img">
+                      <img src="/images/image.png" alt="">
+                  </div>
+                  <div class="content">
+                      <h3>Profesional dan Fokus pada Misi:</h3>
+                      <p> 
+                        "Aplikasi ini dikembangkan untuk memberikan solusi yang efisien dan handal di bidang [sebutkan bidang atau industri aplikasi]. Dengan tim profesional dan berpengalaman, kami berkomitmen untuk selalu memberikan layanan terbaik kepada pengguna kami."</p>
+                      
+                  </div>
+              </div>
+              <div class=" swiper-slide box">
+                  <div class="img">
+                      <img src="/images/image.png" alt="">
+                  </div>
+                  <div class="content">
+                      <h3>Cerita Perusahaan: </h3>
+                      <p> 
+                        "Aplikasi ini lahir dari ide sederhana: bagaimana teknologi bisa membantu memecahkan masalah sehari-hari dengan cara yang praktis dan efisien. Dari sana, kami tumbuh menjadi sebuah tim yang berkomitmen untuk menghadirkan teknologi terbaik yang dapat diandalkan oleh semua orang."  </p>
+                    
+                  </div>
+              </div>
+          </div>
+          
+          <div class="swiper-pagination"></div>
+
+
+      </div>
+  </section>
+
+  <!-- blogs section ends here  -->
+
+    <!-- newsletter section start here  -->
+
+    <!-- <section class="newsletter">
+        <form action="">
+            <h3>subscribe for latest update</h3>
+            <input type="email" name="" placeholder="enter your email" id="" class="box">
+            <input type="button" value="subscribe" class="box2">
+        </form>
+    </section>
+    newsletter section ends here  -->
+
+    <!-- review section start here  -->
+    <section class="review" id="review">
+        <div class="heading">
+            <h2>costumer review</h2>
+        </div>
+
+
+        <div class=" swiper review-row">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <div class="client-review">
+                        <p>Saya coba bikin pakai resep ini, Rasanya enak bangett!!</p>
+                    </div>
+                    <div class="client-info">
+                        <div class="img">
+                            <img src="images/client1.jpg" alt="">
+                        </div>
+                        <div class="clientDetailed">
+                            <h3>Ridwan Prakoso</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="client-review">
+                        <p>Mantap, Cocok untuk yg ingin belajar bikin Kue</p>
+                    </div>
+                    <div class="client-info">
+                        <div class="img">
+                            <img src="images/client1.jpg" alt="">
+                        </div>
+                        <div class="clientDetailed">
+                            <h3>Anasia Subiantoro</h3>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="client-review">
+                        <p>Saya coba bikin Bolu Susu rasanya tidak enak!</p>
+                    </div>
+                    <div class="client-info">
+                        <div class="img">
+                            <img src="images/client1.jpg" alt="">
+                        </div>
+                        <div class="clientDetailed">
+                            <h3>Fauzan Muslim</h3>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="client-review">
+                        <p>Resepnya enak banget, wajib dicoba!</p>
+                    </div>
+                    <div class="client-info">
+                        <div class="img">
+                            <img src="images/client1.jpg" alt="">
+                        </div>
+                        <div class="clientDetailed">
+                            <h3>Iqbal Semok</h3>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+
+            </div>
+        </div>
+    </section>
+    <!-- review section ends here  -->
+
+    <!-- footer section start here  -->
+    <footer class="footer">
+      <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+      </div>
+      <ul class="social-icon">
+        <li class="social-icon__item"><a class="social-icon__link" href="#">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a></li>
+        <li class="social-icon__item"><a class="social-icon__link" href="#">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a></li>
+        <li class="social-icon__item"><a class="social-icon__link" href="#">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a></li>
+        <li class="social-icon__item"><a class="social-icon__link" href="#">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a></li>
+      </ul>
+      <ul class="menu">
+        <li class="menu__item"><a class="menu__link" href="#home">Home</a></li>
+        <li class="menu__item"><a class="menu__link" href="#blogs">About us</a></li>
+        <li class="menu__item"><a class="menu__link" href="#product">Product</a></li>
+        <li class="menu__item"><a class="menu__link" href="#review">review</a></li>
+        <li class="menu__item"><a class="menu__link" href="/edit profile/profile.html">Account</a></li>
+
+      </ul>
+      <p>&copy;2024 Resep Kela | All Rights Reserved</p>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+    <!-- swiper js link  -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- custom js file  -->
+    <script src="/index.js"></script>
+
+
+</body>
+
+</html>
